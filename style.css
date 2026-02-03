@@ -1,0 +1,69 @@
+.left-nav{
+    display: flex;
+    align-items: center;
+}
+.button{
+    display: flex;
+    align-items: center;
+    height: 52px;
+    width: 123px;
+    background-color: rgba(65, 255, 106, 0.432);
+    justify-content: center;
+    gap: 8px;
+    border-radius: 30px;
+}
+.button-g{
+    display: flex;
+    align-items: center;
+    height: 52px;
+    width: 123px;
+    background-color: rgb(26, 180, 59);
+    justify-content: center;
+    gap: 8px;
+    border-radius: 30px;
+}
+.button-pic{
+    height: 34px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 1920px;
+}
+ul{
+    display: flex;
+    gap: 24px;
+}
+.logo{
+    height: 80px;
+}
+.hero{
+    text-align: center;
+    height: 220px;
+    background: linear-gradient(90.00deg, rgba(1.25, 49.64, 34.61, 1),rgba(0, 103, 71, 1) 49.99%,rgba(1, 50, 35, 1) 100%);
+    padding-top: 30px;
+    width: 1920px;
+}
+.hero-pic{
+    height: 95px;
+}
+.cd_bg{
+    background-color: rgba(245, 255, 246, 1);
+    width: 1920px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 50px;
+}
+.card{
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+.history{
+    grid-row: span 3;
+}
