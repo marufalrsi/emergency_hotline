@@ -18,8 +18,15 @@ for(let call of calls){
             alert("not sufficient Ballance!");
             return;
         }
+        let card = call.parentNode.parentNode.parentNode
+        let NameOfCard=card.querySelector('.name').innerText
+        let p_n=card.querySelector('.Phone_number').innerText
+        alert("calling to:"+NameOfCard +"\n"+p_n)
         coin=coin-20;
-        console.log(coin)
         document.getElementById('coin').innerText=coin;
+        
     })
 }
+let hst = document.getElementById('history_card')
+console.log(hst.innerHTML)
+        

@@ -64,6 +64,6 @@ ul{
     padding: 30px;
     border-radius: 12px;
 }
-.history{
+#history{
     grid-row: span 3;
 }
