@@ -25,8 +25,22 @@ for(let call of calls){
         coin=coin-20;
         document.getElementById('coin').innerText=coin;
         let hst = document.getElementById('history');
-hst.innerHTML+=`<div style="display: flex;align-items: center;justify-content: space-between;background-color: rgb(235, 235, 223);border-radius: 15px;padding:12px;margin-bottom: 15px;margin-top: 15px;"> <div> <p class="inter" style="font-size: 18px">${NameOfCard}</p> <p>${p_n}</p> </div> <div>${new Date().toLocaleTimeString()} </div> </div>`      
+hst.innerHTML+=`<div style="display: flex;align-items: center;justify-content: space-between;background-color: rgb(235, 235, 223);border-radius: 15px;padding:12px;margin-bottom: 15px;margin-top: 15px;"> <div> <p class="inter" style="font-size: 18px">${NameOfCard}</p> <p>${p_n}</p> </div> <div>${new Date().toLocaleTimeString()} </div> </div>` 
+console.log(document.getElementById('history').innerHTML)     
     })
 }
-
+document.getElementById('clr').addEventListener("click",function(){
+    console.log('clr');
+    console.log(document.getElementById('history').innerHTML)
+document.getElementById('history').innerHTML=``})
+let cps = document.getElementsByClassName('copy')
+for(let cp of cps){
+    cp.addEventListener("click",function(){
+       alert("copied phone number")
+      let card = cp.parentNode.parentNode.parentNode
+      let copy = card.querySelector('.Phone_number').innerText
+      navigator.clipboard.writeText(copy)
+    })
+   
+}
         
